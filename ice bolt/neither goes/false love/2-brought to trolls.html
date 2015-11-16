@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Frozen - Sisters' Choice</title>
+<style type="text/css">
+body {
+	background-color: #000000;
+}
+</style>
+</head>
+
+<style type="text/css">
+#container {
+	width:68% ;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+}
+
+</style>
+
+<body>
+<div id="container">
+    	<img id="img" src="../../../_image/Anna/Anna Hit Brought to trolls.png" width= "49%" alt=""/> 
+		<img id="img" src="../../../_image/Elsa/Elsa -Anna Hit Brought to trolls.png" width= "49%" alt=""/> 
+</div>
+
+<script src="../../../js/jquery-1.11.2.min.js"></script>
+
+<script>
+var anna1 = false;
+var anna2 = false;
+var elsa = false;
+
+$(document).keypress(function(event){
+	if(String.fromCharCode(event.which) == "q")
+	{
+		anna1 = true;
+		if(elsa == true)
+			window.location.href = 'hans/1-hans kills anna.html';
+	}
+
+	if(String.fromCharCode(event.which) == "e")
+	{
+		anna2 = true;
+		if(elsa == true)
+			window.location.href = 'elsa/1-elsa kiss.html';
+	}
+
+	if(String.fromCharCode(event.which) == 'o')
+	{
+		elsa = true;
+		if(anna1 == true)
+			window.location.href = 'hans/1-hans kills anna.html';
+		else if(anna2 == true)
+			window.location.href = 'elsa/1-elsa kiss.html';
+	}
+})
+
+</script>
+
+</body>
+</html>

@@ -22,28 +22,28 @@ body {
 
 <body>
 <div id="container">
-    	<img id="img" src="../../_image/Anna/TBC.png" width= "49%" alt=""/> 
-		<img id="img" src="../../_image/Elsa/TBC.png" width= "49%" alt=""/> 
+    	<img id="img" src="../../../../_image/Anna/Anna chooses Elsa Love Affair.png" width= "49%" alt=""/> 
+		<img id="img" src="../../../../_image/Elsa/Elsa Anna chooses Elsa Love Affair.png" width= "49%" alt=""/> 
 </div>
 
-<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="../../../../js/jquery-1.11.2.min.js"></script>
 
 <script>
 var anna = false;
 var elsa = false;
 
 $(document).keypress(function(event){
-	if(String.fromCharCode(event.which) == "a")
+	if(String.fromCharCode(event.which) == "w")
 	{
 		anna = true;
 		if(elsa == true)
-			window.location.href = '../../index.html'; 
+			window.location.href = '2-hans elsa marriage.html'; 
 	}
-	if(String.fromCharCode(event.which) == 'i')
+	if(String.fromCharCode(event.which) == 'o')
 	{
 		elsa = true;
 		if(anna == true)
-			window.location.href = '../../index.html'; 
+			window.location.href = '2-hans elsa marriage.html'; 
 	}
 })
 

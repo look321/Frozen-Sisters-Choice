@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Frozen - Sisters' Choice</title>
+<style type="text/css">
+body {
+	background-color: #000000;
+}
+</style>
+</head>
+
+<style type="text/css">
+#container {
+	width:68% ;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+}
+
+</style>
+
+<body>
+<div id="container">
+    	<img id="img" src="../../_image/Anna/Anna accepts proposal tells elsa.png" width= "49%" alt=""/> 
+		<img id="img" src="../../_image/Elsa/elsa - anna gets married yes no choice.png" width= "49%" alt=""/> 
+</div>
+
+<script src="../../js/jquery-1.11.2.min.js"></script>
+
+<script>
+var anna = false;
+var elsa1 = false;
+var elsa2 = false;
+
+$(document).keypress(function(event){
+
+	if(String.fromCharCode(event.which) == 'w')
+	{
+		anna = true;
+		if(elsa1 == true)
+			window.location.href = '5-Hans rule.html';
+		else if(elsa2 == true)
+			window.location.href = '4-true or false love.html';
+	}
+
+		if(String.fromCharCode(event.which) == "i")
+	{
+		elsa1 = true;
+		if(anna == true)
+			window.location.href = '5-Hans rule.html';
+	}
+
+	if(String.fromCharCode(event.which) == "p")
+	{
+		elsa2 = true;
+		if(anna == true)
+			window.location.href = '4-true or false love.html';
+	}
+
+})
+
+</script>
+
+</body>
+</html>
