@@ -22,8 +22,8 @@ body {
 
 <body>
 <div id="container">
-    	<img id="img" src="../../_image/Anna/Neither goes.png" width= "49%" alt=""/> 
-		<img id="img" src="../../_image/Elsa/Neither goes.png" width= "49%" alt=""/> 
+    	<img id="img" src="../../_image/Anna/Anna Neither goes Parents die.png" width= "49%" alt=""/> 
+		<img id="img" src="../../_image/Elsa/Elsa Neither goes Parents die.png" width= "49%" alt=""/> 
 </div>
 
 <script src="../../js/jquery-1.11.2.min.js"></script>
@@ -33,17 +33,17 @@ var anna = false;
 var elsa = false;
 
 $(document).keypress(function(event){
-	if(String.fromCharCode(event.which) == "a")
+	if(String.fromCharCode(event.which) == "w")
 	{
 		anna = true;
 		if(elsa == true)
-			window.location.href = '2-TBC.html'; 
+			window.location.href = '2-coronation.html'; 
 	}
-	if(String.fromCharCode(event.which) == 'i')
+	if(String.fromCharCode(event.which) == 'o')
 	{
 		elsa = true;
 		if(anna == true)
-			window.location.href = '2-TBC.html'; 
+			window.location.href = '2-coronation.html'; 
 	}
 })
 
